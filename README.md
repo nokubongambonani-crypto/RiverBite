@@ -49,5 +49,6 @@ Status: Final
 •	tforms: OpenTable, Reys
 •	Competitor local bistro sites for ideas
 •	Attachments to submit sitemap, wireframes, menu content, photo files, analytics (if available).
+https://github.com/nokubongambonani-crypto/RiverBite/edit/main/README.md
 
 
