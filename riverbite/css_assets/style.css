@@ -1,0 +1,1184 @@
+/* =========================================================
+   RIVER BITE RESTAURANT
+   MAIN STYLE SHEET OF CSS
+   ========================================================= */
+
+
+/* =========================================================
+   1. THE FIRST PAGE 
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    background-color: sienna;
+    color: white;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   2. MY HEADING 
+   ========================================================= */
+
+header {
+    background-color: sienna;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+header p {
+    margin: 5px 0;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+/* =========================================================
+   3. THE NAVIGATION THAT I CHOOSE 
+   ========================================================= */
+
+nav {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 10px;
+
+    background-color: #5a2d1a;
+
+    /*
+       Keeps the navigation items next to each other
+       on normal computer screens.
+    */
+    flex-wrap: nowrap;
+
+    width: 100%;
+}
+
+
+/* Navigation buttons */
+
+nav a {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    width: 125px;
+    height: 42px;
+
+    padding: 5px;
+
+    background-color: sienna;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    /*
+       IMPORTANT:
+       This keeps the navigation text normal-sized.
+    */
+    font-size: 14px;
+    font-weight: normal;
+
+    line-height: normal;
+
+    white-space: nowrap;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Navigation icons */
+
+nav a i {
+    font-size: 14px;
+
+    font-weight: normal;
+
+    line-height: 1;
+}
+
+
+/* Navigation hover */
+
+nav a:hover {
+    background-color: seagreen;
+
+    color: greenyellow;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   4. HEADINGS OF RIVERBITE RESTURANT
+   ========================================================= */
+
+h1 {
+    margin: 0 0 15px 0;
+
+    color: white;
+
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 15px 0;
+
+    color: white;
+
+    font-size: 26px;
+    font-weight: bold;
+}
+
+h3 {
+    margin: 10px 0;
+
+    color: sienna;
+
+    font-size: 21px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 18px;
+
+    color: sienna;
+}
+
+
+/* =========================================================
+   5. MY PARAGRAPHS 
+   ========================================================= */
+
+p {
+    margin: 0 0 15px 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+    font-weight: normal;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   6. 
+   ========================================================= */
+
+section {
+    padding: 20px;
+}
+
+
+/* =========================================================
+   7. PICTURES 
+   ========================================================= */
+
+img {
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+.responsive-imag {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================================
+   8. THE  HOME PAGE
+   ========================================================= */
+
+.home-page {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("../_images/background.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+
+/* =========================================================
+   9. MAIN CONTENT 
+   ========================================================= */
+
+.container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+
+    padding: 10px;
+
+    background-color: hotpink;
+}
+
+
+/* =========================================================
+   10. ARTICLES
+   ========================================================= */
+
+.container article {
+    margin: 10px;
+
+    padding: 20px;
+
+    background-color: lightgoldenrodyellow;
+
+    color: sienna;
+
+    border-radius: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container article h2,
+.container article h3 {
+    color: sienna;
+}
+
+.container article p {
+    color: #5a3a2e;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   11. LINKS AND BUTTONS
+   ========================================================= */
+
+section a {
+    display: inline-block;
+
+    padding: 10px 15px;
+
+    margin: 10px 0;
+
+    background-color: pink;
+
+    color: rgb(170, 8, 8);
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: all 0.3s ease;
+}
+
+section a:hover {
+    background-color: hotpink;
+
+    color: white;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   12. FOOTER
+   ========================================================= */
+
+footer {
+    padding: 20px;
+
+    background-color: lightpink;
+
+    color: sienna;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+
+    color: sienna;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   13. ABOUT RIVERBITE PAGE 
+   ========================================================= */
+
+.about-page {
+    padding: 30px;
+}
+
+
+/* Main About container */
+
+.about-article {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+
+/* About page main heading */
+
+.about-article h2 {
+    margin-bottom: 30px;
+
+    color: white;
+
+    text-align: center;
+
+    font-size: 30px;
+}
+
+
+/* =========================================================
+   14. ABOUT INFORMATION BOXES
+   ========================================================= */
+
+.about-block {
+    margin-bottom: 25px;
+
+    padding: 25px;
+
+    background-color: #fff0f5;
+
+    color: #5a3a2e;
+
+    border: 4px solid pink;
+
+    border-radius: 25px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* About box heading */
+
+.about-block h3 {
+    margin-top: 0;
+
+    margin-bottom: 12px;
+
+    color: sienna;
+
+    font-size: 22px;
+}
+
+
+/* About box paragraph */
+
+.about-block p {
+    margin: 0;
+
+    color: #5a3a2e;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    /*
+       Normal paragraph size.
+       This prevents the large font from appearing.
+    */
+    font-size: 16px;
+
+    font-weight: normal;
+
+    line-height: 1.6;
+
+    text-align: justify;
+}
+
+
+/* =========================================================
+   15. ABOUT  RIVER BITE PARAGRAPH
+   ========================================================= */
+
+.about-paragraph {
+    width: 70%;
+
+    margin: auto;
+
+    padding: 30px;
+
+    background-color: #fff0f5;
+
+    color: #5a3a2e;
+
+    border: 4px solid pink;
+
+    border-radius: 30px;
+}
+
+.about-paragraph p {
+    color: #5a3a2e;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   16. SOLID INFORMATION BOX ABOUT RIVERBITE 
+   ========================================================= */
+
+.solid {
+    max-width: 900px;
+
+    margin: 20px auto;
+
+    padding: 25px;
+
+    background-color: #fff0f5;
+
+    color: #5a3a2e;
+
+    border: 4px solid pink;
+
+    border-radius: 25px;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   17. CONTACT PAGE OF RIVERBITE 
+   ========================================================= */
+
+.contact-container {
+    max-width: 900px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+}
+
+
+.contact-box {
+    margin-bottom: 20px;
+
+    padding: 25px;
+
+    background-color: #fff0f5;
+
+    color: #5a3a2e;
+
+    border: 4px solid pink;
+
+    border-radius: 20px;
+}
+
+
+.contact-box h2 {
+    color: sienna;
+
+    padding: 0;
+}
+
+
+.contact-box p {
+    color: #5a3a2e;
+
+    font-size: 16px;
+}
+
+
+/* Contact icons */
+
+.contact-box i {
+    margin-right: 8px;
+
+    color: sienna;
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   18. ENQUIRY FORM OF RIVERBITE 
+   ========================================================= */
+
+form {
+    max-width: 700px;
+
+    margin: 20px auto;
+
+    padding: 25px;
+
+    background-color: #fff0f5;
+
+    color: #5a3a2e;
+
+    border: 4px solid pink;
+
+    border-radius: 20px;
+}
+
+
+form label {
+    display: block;
+
+    margin-top: 12px;
+
+    margin-bottom: 5px;
+
+    color: #5a3a2e;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+
+    padding: 10px;
+
+    background-color: white;
+
+    color: #333;
+
+    border: 1px solid sienna;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+}
+
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border: 2px solid sienna;
+}
+
+
+form textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+
+/* Form button */
+
+form button {
+    margin-top: 15px;
+
+    padding: 10px 20px;
+
+    background-color: sienna;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    transition: all 0.3s ease;
+}
+
+
+form button:hover {
+    background-color: seagreen;
+
+    color: greenyellow;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   19. MENU PAGE OF RIVERBITE
+   ========================================================= */
+
+.menu-container {
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+}
+
+
+.menu-section {
+    margin-bottom: 25px;
+
+    padding: 25px;
+
+    background-color: #fff0f5;
+
+    color: #5a3a2e;
+
+    border: 4px solid rgb(244, 41, 5);
+
+    border-radius: 25px;
+}
+
+
+.menu-section h2 {
+    padding: 0;
+
+    color: sienna;
+
+    font-size: 26px;
+
+    text-align: center;
+}
+
+
+.menu-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 12px 5px;
+
+    color: #5a3a2e;
+
+    border-bottom: 1px solid pink;
+}
+
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+
+.menu-item h3 {
+    margin: 0;
+
+    color: sienna;
+
+    font-size: 18px;
+}
+
+
+.menu-item p {
+    margin: 3px 0;
+
+    color: #5a3a2e;
+
+    font-size: 15px;
+}
+
+
+.menu-price {
+    color: sienna;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   20. PRODUCTS AND SERVICES OF RIVERBITE
+   ========================================================= */
+
+.services-container {
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+}
+
+
+.service-box {
+    margin-bottom: 25px;
+
+    padding: 25px;
+
+    background-color: #fff0f5;
+
+    color: #5a3a2e;
+
+    border: 4px solid pink;
+
+    border-radius: 25px;
+
+    transition: all 0.3s ease;
+}
+
+
+.service-box:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.service-box h2 {
+    padding: 0;
+
+    color: sienna;
+
+    font-size: 25px;
+}
+
+
+.service-box p {
+    color: #5a3a2e;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* Product/service icons */
+
+.service-box i {
+    margin-right: 10px;
+
+    color: sienna;
+
+    font-size: 22px;
+}
+
+
+/* =========================================================
+   21. INFORMATION BOX OF RIVERBITE 
+   ========================================================= */
+
+.info-box {
+    max-width: 900px;
+
+    margin: 25px auto;
+
+    padding: 25px;
+
+    background-color: #fff0f5;
+
+    color: #5a3a2e;
+
+    border: 4px solid pink;
+
+    border-radius: 25px;
+}
+
+
+.info-box h2 {
+    padding: 0;
+
+    color: sienna;
+}
+
+
+.info-box p {
+    color: #5a3a2e;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   22. LISTS ABOUT RIVERBITE
+   ========================================================= */
+
+ul {
+    line-height: 1.6;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   23. RESPONSIVE TABLET DESIGN
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        gap: 4px;
+    }
+
+    nav a {
+        width: 115px;
+
+        font-size: 13px;
+    }
+
+    nav a i {
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================================
+   24. MOBILE / TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+
+
+    header {
+        padding: 15px;
+    }
+
+
+    header h1 {
+        font-size: 28px;
+    }
+
+
+    h1 {
+        font-size: 28px;
+    }
+
+
+    h2 {
+        font-size: 24px;
+    }
+
+
+    /* Navigation */
+
+    nav {
+        flex-wrap: wrap;
+
+        gap: 5px;
+
+        padding: 8px;
+    }
+
+
+    nav a {
+        width: auto;
+
+        min-width: 110px;
+
+        height: 40px;
+
+        padding: 6px 9px;
+
+        font-size: 13px;
+    }
+
+
+    nav a i {
+        font-size: 13px;
+    }
+
+
+    /* Main container */
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* About */
+
+    .about-page {
+        padding: 25px 15px;
+    }
+
+
+    .about-article h2 {
+        font-size: 28px;
+    }
+
+
+    .about-block {
+        padding: 20px;
+    }
+
+
+    .about-block h3 {
+        font-size: 21px;
+    }
+
+
+    .about-block p {
+        font-size: 16px;
+
+        line-height: 1.6;
+    }
+
+
+    .about-paragraph {
+        width: 85%;
+
+        padding: 25px;
+    }
+
+
+    /* Services */
+
+    .services-container {
+        padding: 15px;
+    }
+
+
+    /* Contact */
+
+    .contact-container {
+        padding: 15px;
+    }
+
+
+    /* Menu */
+
+    .menu-container {
+        padding: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   25. SMALL PHONE OF RIVERBITE 
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 15px;
+    }
+
+
+    header {
+        padding: 12px;
+    }
+
+
+    header h1 {
+        font-size: 25px;
+    }
+
+
+    h1 {
+        font-size: 25px;
+    }
+
+
+    h2 {
+        font-size: 21px;
+    }
+
+
+    h3 {
+        font-size: 19px;
+    }
+
+
+    p {
+        font-size: 15px;
+    }
+
+
+    /* Navigation */
+
+    nav {
+        flex-wrap: wrap;
+
+        gap: 5px;
+
+        padding: 8px;
+    }
+
+
+    nav a {
+        min-width: 100px;
+
+        height: 38px;
+
+        padding: 6px 8px;
+
+        font-size: 12px;
+    }
+
+
+    nav a i {
+        font-size: 12px;
+    }
+
+
+    /* Container */
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* About */
+
+    .about-page {
+        padding: 20px 10px;
+    }
+
+
+    .about-article h2 {
+        font-size: 25px;
+    }
+
+
+    .about-block {
+        padding: 17px;
+
+        border-radius: 20px;
+    }
+
+
+    .about-block h3 {
+        font-size: 20px;
+    }
+
+
+    .about-block p {
+        font-size: 15px;
+
+        line-height: 1.6;
+
+        text-align: left;
+    }
+
+
+    .about-paragraph {
+        width: 90%;
+
+        padding: 20px;
+
+        border-radius: 25px;
+    }
+
+
+    .about-paragraph p {
+        font-size: 15px;
+    }
+
+
+    /* Menu */
+
+    .menu-section {
+        padding: 15px;
+    }
+
+
+    .menu-section h2 {
+        font-size: 22px;
+    }
+
+
+    .menu-item {
+        display: block;
+    }
+
+
+    .menu-item h3 {
+        font-size: 17px;
+    }
+
+
+    .menu-price {
+        display: block;
+
+        margin-top: 5px;
+    }
+
+
+    /* Form */
+
+    form {
+        padding: 18px;
+    }
+
+
+    form input,
+    form textarea,
+    form select {
+        font-size: 14px;
+    }
+
+}

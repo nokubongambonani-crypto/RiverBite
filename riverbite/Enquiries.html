@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>River Bite Enquiries</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css_assets/style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         HEADER
+         ========================================= -->
+
+    <header>
+
+        <img src="_images/logo.png"
+             alt="River Bite Logo"
+             width="150">
+
+        <h1>River Bite Restaurant</h1>
+
+        <p>We Would Love to Hear From You</p>
+
+    </header>
+
+
+    <!-- =========================================
+         NAVIGATION
+         ========================================= -->
+
+    <nav>
+
+        <a href="_index.html">
+            <i class="fa-solid fa-house"></i>
+            Home
+        </a>
+
+
+        <a href="About.html">
+            <i class="fa-solid fa-circle-info"></i>
+            About Us
+        </a>
+
+
+        <a href="Enquiries.html">
+            <i class="fa-solid fa-circle-question"></i>
+            Enquiries
+        </a>
+
+
+        <a href="product and service.html">
+            <i class="fa-solid fa-utensils"></i>
+            Products and Services
+        </a>
+
+
+        <a href="contact.html">
+            <i class="fa-solid fa-phone"></i>
+            Contact
+        </a>
+
+
+        <a href="menu.html">
+            <i class="fa-solid fa-book"></i>
+            Our Menu
+        </a>
+
+    </nav>
+
+
+    <hr>
+
+
+    <!-- =========================================
+         MAIN CONTENT
+         ========================================= -->
+
+    <main>
+
+        <section class="about-block">
+
+            <h2>Our Enquiries</h2>
+
+            <p>
+                At River Bite, we value every enquiry that we receive
+                from our customers. We understand that when a customer
+                contacts us, they may be looking for important
+                information or assistance. For this reason, every
+                enquiry is taken seriously and handled with care as
+                soon as possible.
+            </p>
+
+
+            <h3>We Listen to Our Customers</h3>
+
+            <p>
+                River Bite believes that good communication is an
+                important part of excellent customer service.
+                Customers can use our enquiry form to ask questions,
+                make suggestions, request information or tell us about
+                their experiences at the restaurant.
+            </p>
+
+
+            <h2>Make an Enquiry</h2>
+
+            <p>
+                Please complete the form below if you have any
+                questions about River Bite, our menu, reservations,
+                events or services. We will review your enquiry and
+                respond as soon as possible.
+            </p>
+
+
+            <!-- =========================================
+                 ENQUIRY FORM
+                 ========================================= -->
+
+            <form action="#" method="post">
+
+
+                <!-- FULL NAME -->
+
+                <label for="full-name">
+                    Full Name:
+                </label>
+
+                <br>
+
+                <input type="text"
+                       id="full-name"
+                       name="full-name"
+                       placeholder="Enter your full name"
+                       required>
+
+
+                <br><br>
+
+
+                <!-- EMAIL -->
+
+                <label for="email">
+                    Email Address:
+                </label>
+
+                <br>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email address"
+                       required>
+
+
+                <br><br>
+
+
+                <!-- PHONE -->
+
+                <label for="phone">
+                    Phone Number:
+                </label>
+
+                <br>
+
+                <input type="tel"
+                       id="phone"
+                       name="phone"
+                       placeholder="Enter your phone number">
+
+
+                <br><br>
+
+
+                <!-- SUBJECT -->
+
+                <label for="subject">
+                    Subject:
+                </label>
+
+                <br>
+
+                <input type="text"
+                       id="subject"
+                       name="subject"
+                       placeholder="Enter your subject"
+                       required>
+
+
+                <br><br>
+
+
+                <!-- ENQUIRY TYPE -->
+
+                <label for="enquiry-type">
+                    Type of Enquiry:
+                </label>
+
+                <br>
+
+                <select id="enquiry-type"
+                        name="enquiry-type"
+                        required>
+
+                    <option value="">
+                        Select an enquiry type
+                    </option>
+
+                    <option value="menu">
+                        Menu Information
+                    </option>
+
+                    <option value="reservation">
+                        Reservation
+                    </option>
+
+                    <option value="events">
+                        Events
+                    </option>
+
+                    <option value="services">
+                        Products and Services
+                    </option>
+
+                    <option value="feedback">
+                        Feedback
+                    </option>
+
+                    <option value="other">
+                        Other
+                    </option>
+
+                </select>
+
+
+                <br><br>
+
+
+                <!-- MESSAGE -->
+
+                <label for="message">
+                    Your Message:
+                </label>
+
+                <br>
+
+                <textarea id="message"
+                          name="message"
+                          rows="6"
+                          placeholder="Type your message here..."
+                          required></textarea>
+
+
+                <br><br>
+
+
+                <!-- BUTTONS -->
+
+                <button type="submit">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Submit Enquiry
+                </button>
+
+
+                <button type="reset">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    Clear Form
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- =========================================
+             CUSTOMER FEEDBACK
+             ========================================= -->
+
+        <section class="about-block">
+
+            <h2>Customer Feedback</h2>
+
+            <p>
+                Your feedback helps us improve our food, service and
+                overall dining experience. We appreciate your
+                comments and suggestions and use them to understand
+                what our customers enjoy and where we can improve.
+            </p>
+
+
+            <h3>How Was Your Experience?</h3>
+
+            <form action="#" method="post">
+
+                <label for="rating">
+                    How would you rate your experience?
+                </label>
+
+                <br>
+
+                <select id="rating" name="rating" required>
+
+                    <option value="">
+                        Select your rating
+                    </option>
+
+                    <option value="excellent">
+                        Excellent
+                    </option>
+
+                    <option value="very-good">
+                        Very Good
+                    </option>
+
+                    <option value="good">
+                        Good
+                    </option>
+
+                    <option value="average">
+                        Average
+                    </option>
+
+                    <option value="poor">
+                        Poor
+                    </option>
+
+                </select>
+
+
+                <br><br>
+
+
+                <label for="feedback">
+                    Additional Comments:
+                </label>
+
+                <br>
+
+                <textarea id="feedback"
+                          name="feedback"
+                          rows="5"
+                          placeholder="Tell us about your experience..."></textarea>
+
+
+                <br><br>
+
+
+                <button type="submit">
+                    <i class="fa-solid fa-star"></i>
+                    Submit Feedback
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 River Bite Restaurant.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
